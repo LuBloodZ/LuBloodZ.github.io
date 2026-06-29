@@ -40,7 +40,7 @@ nav a:hover {
 
 /* current page link stands out */
 nav a.current {
-    color: orange solid;
+    color: orange;
     border-bottom: 2px orange solid;
 }
 
@@ -96,10 +96,10 @@ ul {
 /* -- FOOTER -- */
 footer {
     font-size: 0.8em;
-    color: white;
+    color: rgb(184, 224, 230);
 }
 
 #index-body-main-div-blurb {
     color: white;
-    padding-top: 50px;
+    padding-top: 120px;
 }
