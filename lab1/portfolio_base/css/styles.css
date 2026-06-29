@@ -40,7 +40,7 @@ nav a:hover {
 
 /* current page link stands out */
 nav a.current {
-    color: lightgreen;
+    color: orange solid;
     border-bottom: 2px orange solid;
 }
 
@@ -67,15 +67,15 @@ td {
 }
 
 td strong {
-    color: lightblue;
+    color: greenyellow;
 }
 
 #table-header {
-    background-color: #351a00;
+    background-color: #73f758;
 }
 
 .table-row {
-    background-color: #753900;
+    background-color: #8cf7a3;
 }
 
 /* -- INTERESTS LIST -- */
@@ -97,4 +97,9 @@ ul {
 footer {
     font-size: 0.8em;
     color: white;
+}
+
+#index-body-main-div-blurb {
+    color: white;
+    padding-top: 50px;
 }
