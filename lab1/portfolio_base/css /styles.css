@@ -1,0 +1,94 @@
+/* External stylesheet for the Portfolio */
+
+/* -- BODY -- */
+body {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    background-color: black;
+    color: gray;
+}
+
+/* -- HEADING -- */
+.name {
+    font-family: "Orbitron", sans-serif;
+    color: white;
+}
+
+/* -- CENTER CONTENT -- */
+header, main, nav, footer, #content {
+    text-align: center;
+}
+
+/* -- NAVIGATION -- */
+/* "nav a" restricts styles to links inside nav only */
+nav a {
+    padding: 15px;
+    padding-bottom: 4px;
+    font-size: 1.8em;
+    text-decoration: none;
+    color: white;
+}
+
+/* hover pseudo-class */
+nav a:hover {
+    border-bottom: 2px orange solid;
+    font-size: 2em;
+}
+
+/* current page link stands out */
+nav a.current {
+    color: orange;
+    border-bottom: 2px orange solid;
+}
+
+/* -- FLEXBOX -- */
+main {
+    display: flex;
+    justify-content: center;
+}
+
+/* -- TABLE -- */
+table {
+    margin: 0px auto;
+}
+
+td {
+    padding-right: 10px;
+    font-size: 1.3em;
+}
+
+td strong {
+    color: orange;
+}
+
+#table-header {
+    background-color: #351a00;
+}
+
+.table-row {
+    background-color: #753900;
+}
+
+/* -- INTERESTS LIST -- */
+ul {
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.hobby {
+    color: yellow;
+}
+
+.hobby-content {
+    color: gray;
+}
+
+/* -- FOOTER -- */
+footer {
+    font-size: 0.8em;
+    color: #b0b0b0;
+}
