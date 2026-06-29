@@ -67,15 +67,15 @@ td {
 }
 
 td strong {
-    color: greenyellow;
+    color: orange;
 }
 
 #table-header {
-    background-color: #73f758;
+    background-color: lightblue;
 }
 
 .table-row {
-    background-color: #8cf7a3;
+    background-color: orange;
 }
 
 /* -- INTERESTS LIST -- */
@@ -101,5 +101,5 @@ footer {
 
 #index-body-main-div-blurb {
     color: white;
-    padding-top: 120px;
+    padding-top: 80px;
 }
