@@ -1,3 +1,265 @@
 /* External stylesheet for Artificial Intelligence */
 
 /* -- BODY -- */
+/* CSS property 1: font-family */
+/* CSS property 2: background-color */
+/* CSS property 3: color */
+/* CSS property 4: margin */
+body {
+    font-family: "Georgia", serif;
+    background-color: #f8f9fa;
+    color: #202122;
+    margin: 0;
+}
+
+/* -- HEADER -- */
+/* CSS property 5: padding */
+/* CSS property 6: border-bottom (New - not in Lab 1) */
+header {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    border-bottom: 1px solid #a2a9b1;
+}
+
+/* CSS property 7: font-size */
+header h1 {
+    font-size: 2em;
+    color: #000000;
+    margin: 0;
+}
+
+/* CSS property 8: font-style */
+.subtitle {
+    font-style: italic;
+    color: #54595d;
+    font-size: 0.95em;
+    margin: 5px 0 0 0;
+}
+
+/* -- NAVIGATION -- */
+/* CSS property 9: text-decoration */
+nav {
+    background-color: #ffffff;
+    padding: 8px 40px;
+    border-bottom: 1px solid #a2a9b1;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0645ad;
+    font-size: 1em;
+    padding: 6px 12px;
+    margin-right: 4px;
+}
+
+/* CSS property 10: background (hover background) */
+nav a:hover {
+    background-color: #eaf3fb;
+    color: #0645ad;
+}
+
+/* current page tab */
+nav a.current {
+    background-color: #ffffff;
+    border: 1px solid #a2a9b1;
+    border-bottom: 1px solid #ffffff;
+    color: #202122;
+    font-weight: bold;
+}
+
+/* -- MAIN: sidebar + content layout -- */
+/* CSS property 11: display flex */
+/* CSS property 12: gap */
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* -- ASIDE (sidebar) -- */
+/* CSS property 13: width */
+/* CSS property 14: border (New - not in Lab 1) */
+aside {
+    width: 220px;
+    min-width: 220px;
+    background-color: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    padding: 12px;
+    font-size: 0.9em;
+    height: fit-content;
+}
+
+aside h3 {
+    margin-top: 0;
+    font-size: 1em;
+    border-bottom: 1px solid #a2a9b1;
+    padding-bottom: 6px;
+}
+
+aside ol {
+    padding-left: 18px;
+    margin: 8px 0;
+}
+
+aside a {
+    color: #0645ad;
+    text-decoration: none;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+/* -- BLOCKQUOTE (NEW TAG) -- */
+/* CSS property 15: border-left */
+/* CSS property 16: line-height (New - not in Lab 1) */
+blockquote {
+    border-left: 3px solid #a2a9b1;
+    margin: 12px 0 0 0;
+    padding: 8px 12px;
+    font-style: italic;
+    color: #54595d;
+    font-size: 0.85em;
+    line-height: 1.6;
+}
+
+/* -- SECTION content area -- */
+section {
+    flex: 1;
+}
+
+section h2 {
+    font-size: 1.4em;
+    border-bottom: 1px solid #a2a9b1;
+    padding-bottom: 4px;
+    margin-top: 0;
+}
+
+section img {
+    float: right;
+    margin: 0 0 10px 20px;
+    border: 1px solid #a2a9b1;
+}
+
+/* CSS property 17: list-style-type */
+section ul {
+    list-style-type: disc;
+    padding-left: 24px;
+}
+
+section ul li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+section a {
+    color: #0645ad;
+}
+
+/* -- TABLE -- */
+/* CSS property 18: border-collapse */
+table {
+    margin: 16px auto;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+td {
+    padding: 8px 12px;
+    border: 1px solid #a2a9b1;
+    font-size: 0.95em;
+}
+
+#table-header {
+    background-color: #eaecf0;
+    font-weight: bold;
+}
+
+.table-row {
+    background-color: #ffffff;
+}
+
+.table-row:hover {
+    background-color: #eaf3fb;
+}
+
+/* -- 3-COLUMN LAYOUT (ai-applications.html) -- */
+#applications-header {
+    padding: 20px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#applications-header h2 {
+    font-size: 1.4em;
+    border-bottom: 1px solid #a2a9b1;
+    padding-bottom: 4px;
+}
+
+#applications-header img {
+    display: block;
+    margin: 10px 0;
+    border: 1px solid #a2a9b1;
+}
+
+/* CSS property 19: flex-wrap */
+#three-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 0 40px 20px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* CSS property 20: box-sizing */
+.column {
+    background-color: #ffffff;
+    border: 1px solid #a2a9b1;
+    padding: 16px;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.column h3 {
+    margin-top: 0;
+    font-size: 1.1em;
+    border-bottom: 1px solid #a2a9b1;
+    padding-bottom: 4px;
+    color: #0645ad;
+}
+
+.column p {
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+#sources-section {
+    padding: 0 40px 20px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#sources-section h2 {
+    font-size: 1.4em;
+    border-bottom: 1px solid #a2a9b1;
+    padding-bottom: 4px;
+}
+
+#sources-section a {
+    color: #0645ad;
+}
+
+/* -- FOOTER -- */
+/* CSS property 21: text-align */
+footer {
+    background-color: #ffffff;
+    border-top: 1px solid #a2a9b1;
+    text-align: center;
+    padding: 16px;
+    font-size: 0.85em;
+    color: #54595d;
+    margin-top: 20px;
+}
