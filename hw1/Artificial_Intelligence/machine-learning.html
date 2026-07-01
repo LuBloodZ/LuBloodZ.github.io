@@ -1,98 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
     <meta charset="UTF-8">
-    <title>Artificial Intelligence - Overview</title>
+    <title>Machine Learning - AI</title>
     <link href="css/styles.css" rel="stylesheet">
 </head>
- 
+
 <body>
- 
+
     <header>
         <h1>Artificial Intelligence</h1>
         <p class="subtitle">A comprehensive overview of AI and its impact on computing</p>
     </header>
- 
+
     <hr>
- 
+
     <nav>
-        <a href="index.html" class="current">Overview</a>
-        <a href="machine-learning.html">Machine Learning</a>
+        <a href="index.html">Overview</a>
+        <a href="machine-learning.html" class="current">Machine Learning</a>
         <a href="neural-networks.html">Neural Networks</a>
         <a href="ai-applications.html">Applications</a>
     </nav>
- 
+
     <hr>
- 
+
     <main>
- 
-        <!-- LEFT SIDEBAR -->
+
         <aside>
             <h3>Contents</h3>
             <ol>
-                <li><a href="#what-is-ai">What is AI?</a></li>
-                <li><a href="#history">History</a></li>
-                <li><a href="#types">Types of AI</a></li>
+                <li><a href="#what-is-ml">What is ML?</a></li>
+                <li><a href="#types-ml">Types of ML</a></li>
+                <li><a href="#how-it-works">How it Works</a></li>
                 <li><a href="#sources">Sources</a></li>
             </ol>
- 
-            <!-- NEW TAG: <blockquote> -->
+
             <blockquote>
-                "Artificial intelligence is the science of making machines do things that would require intelligence if done by men."
-                <br>- Marvin Minsky
+                "Machine learning is the field of study that gives computers the ability to learn without being explicitly programmed."
+                <br>- Arthur Samuel, 1959
             </blockquote>
         </aside>
- 
-        <!-- MAIN CONTENT -->
-        <section id="what-is-ai">
-            <h2>What is Artificial Intelligence?</h2>
-            <img src="img/ai_overview.png" alt="Artificial Intelligence concept illustration" width="400">
-            <p>
-                Artificial Intelligence (AI) is the area of computer science that deals with getting
-                computers to do things we normally think only people can do. That covers stuff like
-                understanding speech, spotting objects in a photo, translating between languages, or
-                finding patterns hidden in huge piles of data.
-            </p>
-            <p>
-                What makes AI different from regular programming is that instead of a programmer
-                spelling out every single rule, AI systems can pick up patterns from examples and get
-                better as they see more data. That's also why AI needs so much data and computing
-                power to work well.
-            </p>
- 
-            <h2 id="history">Brief History of AI</h2>
-            <p>
-                The idea goes back to the 1950s, Alan Turing asked whether a machine could actually
-                "think" and came up with a test for it. A few years later, in 1956, a group of
-                researchers met at Dartmouth College and officially named the field "artificial
-                intelligence," which is usually treated as the moment AI was born.
-            </p>
-            <p>
-                Progress wasn't a straight line though as there were stretches called "AI winters" where
-                funding and interest dried up because the technology couldn't live up to the hype. Things
-                really took off again in the 2000s and 2010s once computers got fast enough and there was
-                finally enough data around to train on.
-            </p>
- 
-            <h2 id="types">Types of AI</h2>
-            <ul>
-                <li><strong>Narrow AI:</strong> Good at one specific thing, like recognizing faces or playing chess. This is basically all the AI we actually have right now.</li>
-                <li><strong>General AI:</strong> The kind that could handle any task a human could. It doesn't exist yet and is still more of a goal than a reality.</li>
-                <li><strong>Super AI:</strong> A hypothetical AI that would be smarter than humans at everything. Purely theoretical for now.</li>
 
+        <section>
+
+            <h2 id="what-is-ml">What is Machine Learning?</h2>
+            <img src="img/machine_learning.png" alt="Machine Learning diagram" width="400">
+            <p>
+                Machine Learning (ML) is a part of AI that's all about letting computers learn from
+                data instead of being told exactly what to do. Rather than a programmer writing out
+                every rule by hand, you feed the system a bunch of examples and it figures out the
+                patterns on its own, then uses those patterns to make predictions or decisions.
+            </p>
+
+            <h2 id="types-ml">Types of Machine Learning</h2>
+            <ul>
+                <li><strong>Supervised Learning:</strong> You train the model on data that already has the right answers attached (labeled data). A classic example is spam detection — you show it emails already marked spam or not spam.</li>
+                <li><strong>Unsupervised Learning:</strong> The data has no labels, so the model just looks for patterns or groups on its own. Think of grouping customers by shopping habits without telling it the categories ahead of time.</li>
+                <li><strong>Reinforcement Learning:</strong> The model learns by trial and error, getting rewards when it does something right. This is how a lot of game-playing AIs get trained.</li>
             </ul>
+
+            <h2 id="how-it-works">How Machine Learning Works</h2>
+            <p>
+                The basic process usually goes like this: you collect your data and clean it up so there
+                aren't errors messing things up. Then you split it into a training set and a testing set.
+                The model learns from the training set, and you use the testing set it hasn't seen before
+                to check how well it actually does.
+            </p>
+            <p>
+                There are a bunch of common algorithms like Linear Regression, Decision Trees,
+                Random Forests, and Support Vector Machines. Each one is better at certain kinds of
+                problems, so which one you pick really depends on what you're trying to do.
+            </p>
+
+            <!-- TABLE showing ML algorithms -->
+            <table>
+                <tr id="table-header">
+                    <td><strong>Algorithm</strong></td>
+                    <td><strong>Type</strong></td>
+                    <td><strong>Common Use</strong></td>
+                </tr>
+                <tr class="table-row">
+                    <td>Linear Regression</td>
+                    <td>Supervised</td>
+                    <td>Predicting numbers (e.g. house prices)</td>
+                </tr>
+                <tr class="table-row">
+                    <td>Decision Tree</td>
+                    <td>Supervised</td>
+                    <td>Classification problems</td>
+                </tr>
+                <tr class="table-row">
+                    <td>K-Means</td>
+                    <td>Unsupervised</td>
+                    <td>Grouping similar data</td>
+                </tr>
+                <tr class="table-row">
+                    <td>Q-Learning</td>
+                    <td>Reinforcement</td>
+                    <td>Game playing agents</td>
+                </tr>
+            </table>
 
             <h2 id="sources">Sources</h2>
             <ul>
-                <li><a href="https://www.ibm.com/topics/artificial-intelligence">IBM - What is Artificial Intelligence(AI)?</a></li>
-                <li><a href="https://plato.stanford.edu/entries/artificial-intelligence/">Stanford Encyclopedia of Philosophy - Artificial Intelligence</a></li>
+                <li><a href="https://www.ibm.com/topics/machine-learning">IBM - What is Machine Learning?</a></li>
+                <li><a href="https://www.coursera.org/articles/what-is-machine-learning">Coursera - What Is Machine Learning? Definition, Types, and Examples</a></li>
+                <li><a href="https://mitsloan.mit.edu/ideas-made-to-matter/machine-learning-explained">MIT Sloan - Machine learning, explained</a></li>
             </ul>
+
         </section>
 
     </main>
 
-     <footer>
+    <footer>
         <hr>
         <img src="img/Monterey_Bay_Logo.png" alt="CSUMB Logo" width="100">
         <br>

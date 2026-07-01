@@ -3,7 +3,7 @@
  
 <head>
     <meta charset="UTF-8">
-    <title>Artificial Intelligence - Overview</title>
+    <title>Neural Networks - AI</title>
     <link href="css/styles.css" rel="stylesheet">
 </head>
  
@@ -17,9 +17,9 @@
     <hr>
  
     <nav>
-        <a href="index.html" class="current">Overview</a>
+        <a href="index.html">Overview</a>
         <a href="machine-learning.html">Machine Learning</a>
-        <a href="neural-networks.html">Neural Networks</a>
+        <a href="neural-networks.html" class="current">Neural Networks</a>
         <a href="ai-applications.html">Applications</a>
     </nav>
  
@@ -27,72 +27,62 @@
  
     <main>
  
-        <!-- LEFT SIDEBAR -->
         <aside>
             <h3>Contents</h3>
             <ol>
-                <li><a href="#what-is-ai">What is AI?</a></li>
-                <li><a href="#history">History</a></li>
-                <li><a href="#types">Types of AI</a></li>
+                <li><a href="#what-is-nn">What are Neural Networks?</a></li>
+                <li><a href="#structure">Structure</a></li>
+                <li><a href="#types-nn">Types</a></li>
                 <li><a href="#sources">Sources</a></li>
             </ol>
  
-            <!-- NEW TAG: <blockquote> -->
             <blockquote>
-                "Artificial intelligence is the science of making machines do things that would require intelligence if done by men."
-                <br>- Marvin Minsky
+                "Neural networks are the foundation of deep learning, and deep learning is the foundation of modern AI."
+                <br>- Yann LeCun
             </blockquote>
         </aside>
  
-        <!-- MAIN CONTENT -->
-        <section id="what-is-ai">
-            <h2>What is Artificial Intelligence?</h2>
-            <img src="img/ai_overview.png" alt="Artificial Intelligence concept illustration" width="400">
+        <section>
+ 
+            <h2 id="what-is-nn">What are Neural Networks?</h2>
+            <img src="img/neural_network.png" alt="Neural Network diagram" width="400">
             <p>
-                Artificial Intelligence (AI) is the area of computer science that deals with getting
-                computers to do things we normally think only people can do. That covers stuff like
-                understanding speech, spotting objects in a photo, translating between languages, or
-                finding patterns hidden in huge piles of data.
+                Artificial Neural Networks (ANNs) are computer systems loosely based on how the brain
+                works. They're built out of layers of connected "neurons" (basically little nodes) that
+                take in information, do some math on it, and pass the result along to the next layer.
             </p>
             <p>
-                What makes AI different from regular programming is that instead of a programmer
-                spelling out every single rule, AI systems can pick up patterns from examples and get
-                better as they see more data. That's also why AI needs so much data and computing
-                power to work well.
+                Neural networks are what power Deep Learning, and they're behind a lot of the big AI
+                wins you've probably heard about — stuff like recognizing images, understanding language,
+                and AIs that can play games at a superhuman level.
             </p>
  
-            <h2 id="history">Brief History of AI</h2>
-            <p>
-                The idea goes back to the 1950s, Alan Turing asked whether a machine could actually
-                "think" and came up with a test for it. A few years later, in 1956, a group of
-                researchers met at Dartmouth College and officially named the field "artificial
-                intelligence," which is usually treated as the moment AI was born.
-            </p>
-            <p>
-                Progress wasn't a straight line though as there were stretches called "AI winters" where
-                funding and interest dried up because the technology couldn't live up to the hype. Things
-                really took off again in the 2000s and 2010s once computers got fast enough and there was
-                finally enough data around to train on.
-            </p>
- 
-            <h2 id="types">Types of AI</h2>
+            <h2 id="structure">Structure of a Neural Network</h2>
+            <p>Most neural networks are made up of three kinds of layers:</p>
             <ul>
-                <li><strong>Narrow AI:</strong> Good at one specific thing, like recognizing faces or playing chess. This is basically all the AI we actually have right now.</li>
-                <li><strong>General AI:</strong> The kind that could handle any task a human could. It doesn't exist yet and is still more of a goal than a reality.</li>
-                <li><strong>Super AI:</strong> A hypothetical AI that would be smarter than humans at everything. Purely theoretical for now.</li>
-
+                <li><strong>Input Layer:</strong> This is where the raw data comes in, like the pixel values of an image.</li>
+                <li><strong>Hidden Layers:</strong> The middle layers that do the actual processing through weighted connections. "Deep" networks just means there are a lot of these.</li>
+                <li><strong>Output Layer:</strong> Where the final answer comes out, like whether the image is a "cat" or a "dog."</li>
             </ul>
-
+ 
+            <h2 id="types-nn">Types of Neural Networks</h2>
+            <ul>
+                <li><strong>Convolutional Neural Networks (CNN):</strong> These are the go-to for images and computer vision.</li>
+                <li><strong>Recurrent Neural Networks (RNN):</strong> Built for data that comes in sequences, like text or speech.</li>
+                <li><strong>Generative Adversarial Networks (GAN):</strong> Used to create new data, like those realistic fake images you see online.</li>
+                <li><strong>Transformers:</strong> The design behind big language models like ChatGPT and Claude.</li>
+            </ul>
+ 
             <h2 id="sources">Sources</h2>
             <ul>
-                <li><a href="https://www.ibm.com/topics/artificial-intelligence">IBM - What is Artificial Intelligence(AI)?</a></li>
-                <li><a href="https://plato.stanford.edu/entries/artificial-intelligence/">Stanford Encyclopedia of Philosophy - Artificial Intelligence</a></li>
+                <li><a href="https://www.ibm.com/topics/neural-networks">IBM - What is a Neural Network?</a></li>
             </ul>
+ 
         </section>
-
+ 
     </main>
-
-     <footer>
+ 
+    <footer>
         <hr>
         <img src="img/Monterey_Bay_Logo.png" alt="CSUMB Logo" width="100">
         <br>
@@ -100,6 +90,6 @@
         <br>
         <strong>Disclaimer:</strong> The information in this webpage is for academic purposes only.
     </footer>
-
+ 
 </body>
 </html>
