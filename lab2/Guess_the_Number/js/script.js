@@ -56,4 +56,31 @@ function checkGuess() {
 
     // show this guess in the previous guesses list
     document.querySelector("#guesses").textContent += guess + " ";
+
+      feedback.style.color = "orange";
+
+    if (guess == randomNumber) {
+        feedback.textContent = "You guessed it! You Won! It took " + attempts + " attempts.";
+        feedback.style.color = "darkgreen";
+        gameOver();
+    } else if (attempts == 7) {
+        feedback.textContent = "Sorry, you lost! The number was " + randomNumber + ".";
+        feedback.style.color = "red";
+        gameOver();
+    } else if (guess > randomNumber) {
+        feedback.textContent = "Guess was too high";
+    } else {
+        feedback.textContent = "Guess was too low";
+    }
+
+    // clear the textbox for next guess
+    let playerGuess = document.querySelector("#playerGuess");
+    playerGuess.value = "";
+    playerGuess.focus();
+}
+
+    // ends the game - hide Guess, show Reset
+function gameOver() {
+    document.querySelector("#guessBtn").style.display = "none";
+    document.querySelector("#resetBtn").style.display = "inline";
 }
