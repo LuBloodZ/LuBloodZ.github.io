@@ -1,55 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <title> Guess a Number </title>
+        <meta charset="utf-8">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
  
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guess the Number</title>
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-</head>
- 
-<body>
- 
-    <div id="main">
- 
-        <h1>Guess the Number!</h1>
- 
-        <p>Guess a number between 1 and 99</p>
- 
-        Enter a guess:
-        <input type="text" id="playerGuess" size="5">
-        <button id="guessBtn">Guess</button>
+        <header>
+            <h1>Guess the Number!</h1>
+            <h2>Guess a number between 1 and 99 in seven attempts!</h2>
+        </header>
         <br>
-        <button id="resetBtn">Reset</button>
+        <div id="main">
+          Enter a guess: 
+          <input type="text" id="playerGuess" size="5">         
+          <button id="guessBtn"> Guess </button> <br>
+          <button id="resetBtn"> Reset </button>
  
-        <!-- feedback message shows here -->
-        <div id="feedback"></div>
+          <!-- feedback message shows here -->
+          <div id="feedback"></div>
  
-        <!-- previous guesses show here -->
-        <div>Previous Guesses: <span id="guesses"></span></div>
+          <!-- previous guesses show here -->
+          <div>Previous Guesses: <span id="guesses"></span></div>
  
-        <!-- attempts left shows here -->
-        <div>Attempts left: <span id="attemptsLeft"></span></div>
+          <!-- attempts left shows here -->
+          <div>Attempts left: <span id="attemptsLeft"></span></div>
  
-        <!-- wins and losses show here -->
-        <div id="scoreboard">
-            Wins: <span id="wins">0</span> |
-            Losses: <span id="losses">0</span>
+          <!-- wins and losses show here -->
+          <div id="scoreboard">
+              Wins: <span id="wins">0</span> |
+              Losses: <span id="losses">0</span>
+          </div>
         </div>
  
-    </div>
+        <footer>
+            <img src="img/Monterey_Bay_Logo.png" alt="CSUMB Logo" width="120">
+            <br>
+            CST-336 Internet Programming. 2026&copy; Cao
+            <br>
+            <strong>Disclaimer:</strong> The information in this webpage is for academic purposes only.
+        </footer>
  
-    <footer>
-        <img src="img/Monterey_Bay_Logo.png" alt="CSUMB Logo" width="120">
-        <br>
-        CST-336 Internet Programming. 2026&copy; Cao
-        <br>
-        <strong>Disclaimer:</strong> The information in this webpage is for academic purposes only.
-    </footer>
+        <!-- external JavaScript file -->
+        <script src="js/script.js"></script>
  
-    <!-- external JavaScript file -->
-    <script src="js/script.js"></script>
- 
-</body>
+    </body>
 </html>
- 
+
