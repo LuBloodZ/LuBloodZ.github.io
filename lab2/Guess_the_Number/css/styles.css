@@ -1,0 +1,116 @@
+/* Guess the Number stylesheet */
+/* CST-336 Internet Programming */
+/* Lichen Cao */
+/* 07/05/2026 */
+
+/* body */
+body {
+    font-family: "Trebuchet MS", sans-serif;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 40px;
+    margin: 0;
+    color: #202122;
+}
+ 
+/* main box - solid background so text is readable on top of the image */
+#main {
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 3px solid #333333;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+ 
+h1 {
+    color: #1a3a5c;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 0;
+}
+ 
+p {
+    font-style: italic;
+    line-height: 1.5;
+}
+ 
+/* textbox */
+#playerGuess {
+    font-size: 1.2em;
+    padding: 5px;
+    text-align: center;
+    width: 80px;
+}
+ 
+/* buttons */
+button {
+    font-size: 1.1em;
+    padding: 8px 20px;
+    margin: 10px 5px;
+    cursor: pointer;
+    background-color: #1a3a5c;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+ 
+button:hover {
+    background-color: #2a5a8c;
+}
+ 
+/* feedback message */
+#feedback {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 15px 0;
+    min-height: 25px;
+}
+ 
+/* previous guesses */
+#guesses {
+    font-weight: bold;
+    color: #1a3a5c;
+    word-spacing: 4px;
+}
+ 
+/* scoreboard */
+#scoreboard {
+    margin-top: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #1a3a5c;
+    border-top: 2px solid #cccccc;
+    padding-top: 12px;
+}
+ 
+/* footer with name and CSUMB logo */
+footer {
+    margin-top: 30px;
+    color: #ffffff;
+    font-size: 0.9em;
+    text-shadow: 1px 1px 3px #000000;
+}
+ 
+/* header (from the starter structure) */
+header {
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 12px;
+}
+ 
+h2 {
+    color: #2a5a8c;
+    font-size: 1.1em;
+    font-weight: normal;
+}
