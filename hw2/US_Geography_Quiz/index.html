@@ -17,13 +17,13 @@
     <div class="container my-4">
  
         <!-- Q1: text input -->
-        <h3><span id="markImg1"></span> 1. What is the capital of California?</h3>
+        <h2><span id="markImg1"></span> 1. What is the capital of California?</h2>
         <input type="text" id="q1" class="form-control w-25 mx-auto">
         <div id="q1Feedback"></div>
         <br>
  
         <!-- Q2: dropdown -->
-        <h3><span id="markImg2"></span> 2. What is the longest river in the US?</h3>
+        <h2><span id="markImg2"></span> 2. What is the longest river in the US?</h2>
         <select id="q2" class="form-select w-25 mx-auto">
             <option value="">Select One</option>
             <option value="ms">Mississippi</option>
@@ -35,25 +35,25 @@
         <br>
  
         <!-- Q3: checkboxes (randomized) -->
-        <h3><span id="markImg3"></span> 3. Which presidents are carved into Mount Rushmore?</h3>
+        <h2><span id="markImg3"></span> 3. Which presidents are carved into Mount Rushmore?</h2>
         <div id="q3Choices"></div>
         <div id="q3Feedback"></div>
         <br>
  
         <!-- Q4: radio buttons (randomized order) -->
-        <h3><span id="markImg4"></span> 4. What is the smallest US State?</h3>
+        <h2><span id="markImg4"></span> 4. What is the smallest US State?</h2>
         <div id="q4Choices"></div>
         <div id="q4Feedback"></div>
         <br>
  
         <!-- Q5: text input -->
-        <h3><span id="markImg5"></span> 5. What is the capital of the United States?</h3>
+        <h2><span id="markImg5"></span> 5. What is the capital of the United States?</h2>
         <input type="text" id="q5" class="form-control w-25 mx-auto">
         <div id="q5Feedback"></div>
         <br>
  
         <!-- Q6: dropdown -->
-        <h3><span id="markImg6"></span> 6. Which state is known as the "Sunshine State"?</h3>
+        <h2><span id="markImg6"></span> 6. Which state is known as the "Sunshine State"?</h2>
         <select id="q6" class="form-select w-25 mx-auto">
             <option value="">Select One</option>
             <option value="ca">California</option>
@@ -65,25 +65,25 @@
         <br>
  
         <!-- Q7: checkboxes (randomized) -->
-        <h3><span id="markImg7"></span> 7. Which of these states border the Pacific Ocean?</h3>
+        <h2><span id="markImg7"></span> 7. Which of these states border the Pacific Ocean?</h2>
         <div id="q7Choices"></div>
         <div id="q7Feedback"></div>
         <br>
  
         <!-- Q8: radio buttons (randomized) -->
-        <h3><span id="markImg8"></span> 8. Which is the largest US state by area?</h3>
+        <h2><span id="markImg8"></span> 8. Which is the largest US state by area?</h2>
         <div id="q8Choices"></div>
         <div id="q8Feedback"></div>
         <br>
  
         <!-- Q9: radio buttons (randomized) -->
-        <h3><span id="markImg9"></span> 9. Which ocean is on the East Coast of the US?</h3>
+        <h2><span id="markImg9"></span> 9. Which ocean is on the East Coast of the US?</h2>
         <div id="q9Choices"></div>
         <div id="q9Feedback"></div>
         <br>
  
         <!-- Q10: dropdown -->
-        <h3><span id="markImg10"></span> 10. Which Great Lake is entirely within the US?</h3>
+        <h2><span id="markImg10"></span> 10. Which Great Lake is entirely within the US?</h2>
         <select id="q10" class="form-select w-25 mx-auto">
             <option value="">Select One</option>
             <option value="superior">Superior</option>
@@ -95,17 +95,18 @@
         <br><br>
  
         <!-- validation message -->
-        <h3 id="validationFdbk" class="bg-danger text-white"></h3>
+        <div id="validationFdbk" class="bg-danger text-white fs-4"></div>
  
         <button id="submitBtn" class="btn btn-outline-primary btn-lg">Submit Quiz</button>
         <button id="resetBtn" class="btn btn-outline-secondary btn-lg">Try Again</button>
  
         <!-- results -->
-        <h2 id="totalScore" class="mt-4"></h2>
-        <h3 id="congratsMsg" class="text-success"></h3>
-        <h3 id="totalAttempts"></h3>
+        <div id="totalScore" class="mt-4 fs-2 fw-bold"></div>
+        <div id="congratsMsg" class="text-success fs-4"></div>
+        <div id="totalAttempts" class="fs-4"></div>
  
     </div>
+
 
     <footer class="bg-info p-3 mt-4">
         <img src="img/Monterey_Bay_Logo.png" alt="CSUMB Logo" width="120">
