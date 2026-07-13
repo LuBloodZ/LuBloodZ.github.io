@@ -67,7 +67,7 @@ async function checkUsername() {
 
 // ----- API 3: load counties for the selected state -----
 async function loadCounties() {
-    let state = document.querySelector("#state").value;
+    let state = document.querySelector("#state").value.toLowerCase();
     let countyMenu = document.querySelector("#county");
     countyMenu.textContent = "";
 
@@ -80,10 +80,12 @@ async function loadCounties() {
         let response = await fetch(url);
         let data = await response.json();
 
-        for (let county of data) {
+
+
+        for (let item of data) {
             let option = document.createElement("option");
-            option.value = county;
-            option.textContent = county;
+            option.value = item.county;
+            option.textContent = item.county;
             countyMenu.appendChild(option);
         }
     } catch (error) {
