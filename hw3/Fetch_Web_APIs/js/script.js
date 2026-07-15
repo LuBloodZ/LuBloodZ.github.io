@@ -30,7 +30,18 @@ async function searchCharacters() {
     // data.results is the array of characters the API found
     for (let character of data.results) {
         let card = document.createElement("div");
-        card.textContent = character.name;
+         card.className = "card";  // so the CSS can style it later
+
+        // innerHTML builds the whole card layout at once
+        // ${...} inserts each character's data into the template
+        card.innerHTML = `
+            <img src="${character.image}" alt="${character.name}">
+            <h2>${character.name}</h2>
+            <p>${character.status} - ${character.species}</p>
+            <p><strong>Gender:</strong> ${character.gender}</p>
+            <p><strong>Origin:</strong> ${character.origin.name}</p>
+            <p><strong>Location:</strong> ${character.location.name}</p>
+        `;
         results.appendChild(card);  // add it to the page
     }
 }
