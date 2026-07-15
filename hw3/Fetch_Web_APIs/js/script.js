@@ -14,7 +14,7 @@ async function searchCharacters() {
 
     // clear any previous results before showing new ones
     results.textContent = "";
-    let url = `https://rickandmortyapi.com/api/?name=${name}`;
+    let url = `https://rickandmortyapi.com/api/character/?name=${name}`;
 
     // await pauses here until the API sends data back
     let response = await fetch(url);
