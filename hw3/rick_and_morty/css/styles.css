@@ -1,0 +1,128 @@
+/* External stylesheet for Rick and Morty Character Search */
+
+/* dark background for the whole page */
+body {
+    font-family: "Trebuchet MS", sans-serif;
+    background-color: #1a1a2e;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* green header bar */
+header {
+    background-color: #97ce4c;
+    color: #1a1a2e;
+    text-align: center;
+    padding: 20px;
+}
+
+/* the main title */
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    letter-spacing: 1px;
+}
+
+/* center the search area */
+#searchBox {
+    text-align: center;
+    margin: 30px auto;
+}
+
+/* the text input */
+#charName {
+    padding: 10px;
+    font-size: 1em;
+    width: 260px;
+    border: 2px solid #97ce4c;
+    border-radius: 6px;
+}
+
+/* the search button */
+#searchBtn {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #97ce4c;
+    color: #1a1a2e;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* button changes shade on hover */
+#searchBtn:hover {
+    background-color: #7fb53a;
+}
+
+/* validation errors show in red */
+#errorMsg {
+    color: #ff6b6b;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+/* flexbox lays the cards out in a wrapping grid */
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* each character card */
+.card {
+    background-color: #16213e;
+    border: 2px solid #97ce4c;
+    border-radius: 10px;
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* character photo fills the card width */
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* character name */
+.card h2 {
+    font-size: 1.3em;
+    color: #97ce4c;
+    margin: 10px 0;
+}
+
+/* the detail lines */
+.card p {
+    margin: 6px 0;
+    font-size: 0.95em;
+}
+
+/* the little status circle next to alive/dead */
+.dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;  /* turns the square into a circle */
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* status dot colors (JavaScript picks which one) */
+.green { background-color: #55cc44; }
+.red { background-color: #d63d2e; }
+.gray { background-color: #9e9e9e; }
+
+/* footer */
+footer {
+    background-color: #16213e;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 0.85em;
+    color: #cccccc;
+    border-top: 2px solid #97ce4c;
+}
