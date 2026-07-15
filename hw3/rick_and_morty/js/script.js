@@ -8,9 +8,25 @@ document.querySelector("#searchBtn").addEventListener("click", searchCharacters)
 
 // async lets us use "await" inside this function
 async function searchCharacters() {
-    // grab what the user typed
-    let name = document.querySelector("#charName").value;
+    // grab what the user typed into the textbox
+    let name = document.querySelector("#charName").value.trim();
+    let errorMsg = document.querySelector("#errorMsg");
     let results = document.querySelector("#results");
+
+    // clear the old error message before each search
+    errorMsg.textContent = "";
+
+    // ----- VALIDATION -----
+    // don't search if the box is empty
+    if (name === "") {
+        errorMsg.textContent = "Please enter a character name.";
+        return;  // stop the function right here
+    }
+    // a single letter matches way too many characters, so require 2+
+    if (name.length < 2) {
+        errorMsg.textContent = "Please enter at least 2 characters.";
+        return;
+    }
 
     // clear any previous results before showing new ones
     results.textContent = "";
