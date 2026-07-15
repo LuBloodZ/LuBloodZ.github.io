@@ -5,16 +5,25 @@
 
 // when the Search button is clicked, run searchCharacters()
 document.querySelector("#searchBtn").addEventListener("click", searchCharacters);
+// also search when the user presses Enter in the textbox
+document.querySelector("#charName").addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        searchCharacters();
+    }
+});
 
 // async lets us use "await" inside this function
 async function searchCharacters() {
     // grab what the user typed into the textbox
     let name = document.querySelector("#charName").value.trim();
     let errorMsg = document.querySelector("#errorMsg");
+    // grab the container where the cards will go
     let results = document.querySelector("#results");
 
     // clear the old error message before each search
     errorMsg.textContent = "";
+    // clear any previous results before showing new ones
+    results.textContent = "";
 
     // ----- VALIDATION -----
     // don't search if the box is empty
@@ -27,24 +36,27 @@ async function searchCharacters() {
         errorMsg.textContent = "Please enter at least 2 characters.";
         return;
     }
+     // try/catch handles the case where the fetch itself fails
+    try {
+        // ----- FETCH from the Web API -----
+        let url = `https://rickandmortyapi.com/api/character/?name=${name}`;
 
-    // clear any previous results before showing new ones
-    results.textContent = "";
-    let url = `https://rickandmortyapi.com/api/character/?name=${name}`;
+        // await pauses here until the API responds
+        let response = await fetch(url);
 
-    // await pauses here until the API sends data back
-    let response = await fetch(url);
-    // convert the JSON response into a JavaScript object
-    let data = await response.json();
+        // this API returns a 404 status when nothing matches
+        if (response.status === 404) {
+            errorMsg.textContent = `No characters found for "${name}".`;
+            return;
+        }
 
- // grab the container where the cards will go
-    let results = document.querySelector("#results");
+        // convert the JSON response into a JavaScript object
+        let data = await response.json();
 
-    // clear old results before showing new ones
-    results.textContent = "";
+        // ----- DISPLAY the results as cards -----
 
-    // data.results is the array of characters the API found
-    for (let character of data.results) {
+        // data.results is the array of characters the API found
+        for (let character of data.results) {
         let card = document.createElement("div");
          card.className = "card";  // so the CSS can style it later
 
@@ -68,6 +80,11 @@ async function searchCharacters() {
             <p><strong>Location:</strong> ${character.location.name}</p>
         `;
         results.appendChild(card);  // add it to the page
+    }
+      } catch (error) {
+        // if anything goes wrong, tell the user instead of failing silently
+        errorMsg.textContent = "Something went wrong. Please try again.";
+        console.error(error);
     }
 }
 
