@@ -32,12 +32,21 @@ async function searchCharacters() {
         let card = document.createElement("div");
          card.className = "card";  // so the CSS can style it later
 
+        // pick a dot color based on whether the character is alive
+        let statusColor = "gray";  // default for "unknown"
+        if (character.status === "Alive") {
+            statusColor = "green";
+        } else if (character.status === "Dead") {
+            statusColor = "red";
+        }
+
         // innerHTML builds the whole card layout at once
         // ${...} inserts each character's data into the template
         card.innerHTML = `
             <img src="${character.image}" alt="${character.name}">
             <h2>${character.name}</h2>
-            <p>${character.status} - ${character.species}</p>
+            <p><span class="dot ${statusColor}"></span>
+               ${character.status} - ${character.species}</p>
             <p><strong>Gender:</strong> ${character.gender}</p>
             <p><strong>Origin:</strong> ${character.origin.name}</p>
             <p><strong>Location:</strong> ${character.location.name}</p>
