@@ -21,10 +21,17 @@ async function searchCharacters() {
     // convert the JSON response into a JavaScript object
     let data = await response.json();
 
+ // grab the container where the cards will go
+    let results = document.querySelector("#results");
+
+    // clear old results before showing new ones
+    results.textContent = "";
+
     // data.results is the array of characters the API found
     for (let character of data.results) {
         let card = document.createElement("div");
         card.textContent = character.name;
-        results.appendChild(card);  // add the div to the page
+        results.appendChild(card);  // add it to the page
     }
 }
+
